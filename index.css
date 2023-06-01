@@ -35,7 +35,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
+    --pink: #1a1af0;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -502,32 +502,6 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 900px) {
     .work__code {
         height: 4rem;
-    }
-}
-
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
     }
 }
 
