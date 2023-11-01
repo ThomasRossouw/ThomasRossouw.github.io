@@ -10,13 +10,19 @@
   <title>
     THOMAS ARNAUD ROSSOUW 
   </title>
-
+  
   <meta name="description" content="Add small description of yourself.">
   <meta name="keywords" content="Put your name, skills and some coding keywords" />
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="glightbox/css/glightbox.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="index.css" />
 </head>
 
-<body>
+<body id="style-4">
 
   <!-- ***** Header ***** -->
 
@@ -37,10 +43,10 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">        
-          <span>THOMAS ARNAUD ROSSOUW</span>
+          <span>THOMAS ROSSOUW</span>
         </h1>
         <p></p> based in Durban, South Africa.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      
       </div>
     </div>
   </header>
@@ -53,8 +59,6 @@
       <div class="row">
         <h2>My Work</h2>
         <div class="work__boxes">
-
-        
 
           <div class="work__box">
             <div class="work__text">
@@ -71,7 +75,7 @@
 
               <div class="work__links">
                 <a href="https://thomasrossouw.github.io/YoungGuns.github.io/index.html" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  Visit Site <span>→</span>
                 </a>
                 <a href="https://github.com/ThomasRossouw/YoungGuns.github.io" title="View Source Code" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="GitHub">
@@ -79,7 +83,7 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/project-1.png" class="work__image" alt="Project 1">
             </div>
           </div>
 
@@ -101,14 +105,26 @@
 
               <div class="work__links">
                
+                
+                <a href="images/Farmer.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox work__code" title="Farmer View"><iconify-icon icon="fluent-emoji-high-contrast:man-farmer"></iconify-icon></a>
+
+              
+                
                 <a href="https://github.com/ThomasRossouw/FarmCentral" target="_blank">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
+              
+                <a href="images/Employee.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox work__code" title="Employee View"><iconify-icon icon="raphael:employee"></iconify-icon></a>
+
+
               </div>
             </div>
-            <div class="work__image-box">
+            <!-- <div class="work__image-box">
               <video controls autoplay height="450px"><source src="./images/Employee.mp4" type="video/mp4" ></video>
               <video controls autoplay height="450px"><source src="./images/Farmer.mp4" type="video/mp4" ></video>
+            </div> -->
+            <div class="work__image-box">
+              <img src="./images/Farm.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
@@ -127,13 +143,20 @@
 
               <div class="work__links">
                
+            
+                <a href="images/Dewey.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox work__code" title="Dewey Preview"><iconify-icon icon="mdi:play"></iconify-icon></a>
+
+
                 <a href="https://github.com/ThomasRossouw/DeweyDare/tree/POE" target="_blank">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub" >
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
+            <!-- <div class="work__image-box">
               <video controls autoplay height="450px"><source src="./images/Dewey.mp4" type="video/mp4" ></video>
+            </div> -->
+            <div class="work__image-box">
+              <img src="./images/Dewey.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
@@ -152,13 +175,19 @@
 
               <div class="work__links">
                
+                <a href="images/DOBBS.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox work__code" title="DOBBS Preview"><iconify-icon icon="mdi:play"></iconify-icon></a>
+
+
                 <a href="https://github.com/ThomasRossouw/DOBBS" target="_blank">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub" >
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
+            <!-- <div class="work__image-box">
               <video controls autoplay height="450px"><source src="./images/DOBBS.mp4" type="video/mp4" ></video>
+            </div> -->
+            <div class="work__image-box">
+              <img src="./images/DOBBS.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
@@ -190,56 +219,120 @@
             </div>
           </div>
 
-          <div class="row">
-            <h2>Other Projects</h2>
+<!-- SISONKE WEBSITE -->
           <div class="work__box">
-          
-            <tr>
-                                
-             
-                                <th colspan="2"> <video controls autoplay height="450px"><source src="./images/Follow.mp4" type="video/mp4" ></video></th>
-                               
-                                <div class="work__text">
-                                  <h3>Follow.me</h3>
-                                </div>
-                                
-                                <p>Navigation made Easy. Follow.Me lets you choose the best route to your destination. Allowing for you to have control. 
-                                  Directions are linked to your current location with live updates to navigate you to your destination.</p> 
-                                  <div class="work__links">
-               
-                                    <a href="https://github.com/ThomasRossouw/Follow.Me/tree/master" target="_blank">
-                                      <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub" >
-                                    </a>
-                                  </div>
-                                </div>
-                              
-                                <div class="work__box">
-                                  
-              <th colspan="2"> <video controls autoplay height="450px"><source src="./images/POCA.mp4" type="video/mp4" ></video></th>
-              <div class="work__text">
-                <h3>POCA</h3>
+            <div class="work__text">
+              <h3>Sisonke Surf Club</h3>
+              <p>
+             A website created for a local NGO, with the purpose of growing their brand and gaining more support from the community.
+              
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>         
+              </ul>
+
+              <div class="work__links">
+                <a href="https://sisonkesurfclub.co.za/" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>               
               </div>
-              <p>POCA stands for Personal Online Collections Application.
-                All have all collected something in our lives. Having it all in one place is the most convenient. 
-                POCA is your personal organizer, that stores any and all collections that you want. POCA is available  at the touch of a button.
-                Always ready for you and willing to satisfy  your need to keep organizational structures.</p> 
-                                                                                                  
-                <div class="work__links">
-               
-                  <a href="https://github.com/ThomasRossouw/POCA/tree/master" target="_blank">
-                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub" >
-                  </a>
-                </div>
-              </div>         
-                                    
-            </tr>
-            
-        </table>
-
-
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Sisonke.png" class="work__image" alt="Project 1" />
             </div>
           </div>
-        
+
+          <div class="row">
+            <h2>Other Projects</h2>
+         
+          
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Follow.Me</h3>
+                <p>
+                  Navigation made Easy. Follow.Me lets you choose the best route to your destination. Allowing for you to have control. 
+                  Directions are linked to your current location with live updates to navigate you to your destination.
+                
+                </p>
+                <ul class="work__list">
+                  <li>Java</li>
+                  <li>XML</li>
+                  <li>Firebase</li>     
+                </ul>
+  
+                <div class="work__links">
+               
+                  <a href="images/Follow.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox work__code" title="Follow.Me Preview"><iconify-icon icon="mdi:play"></iconify-icon></a>
+
+
+                  <a href="https://github.com/ThomasRossouw/Follow.Me/tree/master" title="View Source Code" target="_blank">
+                    <img src="./images/github.svg" class="work__code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/fol.png" class="work__image" alt="Project 1" />
+              </div>
+            </div>       
+             
+              
+                
+            <div class="work__box">
+              <div class="work__text">
+                <h3>POCA</h3>
+                <p>
+                  POCA stands for Personal Online Collections Application. All have all collected something in our lives. Having it all in one place is the most convenient. POCA is your personal organizer, that stores any and all collections that you want. 
+                  POCA is available at the touch of a button. Always ready for you and willing to satisfy your need to keep organizational structures.
+                </p>
+                <ul class="work__list">
+                  <li>Java</li>
+                  <li>XML</li>
+                  <li>Firebase</li>
+                       
+                </ul>
+  
+                <div class="work__links">
+                  
+                  <a href="images/POCA.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox work__code" title="POCA Preview"><iconify-icon icon="mdi:play"></iconify-icon></a>
+
+                  <a href="https://github.com/ThomasRossouw/POCA/tree/master" title="View Source Code" target="_blank">
+                    <img src="./images/github.svg" class="work__code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+              
+                <div class="portfolio-wrap">
+                <img src="./images/POCA.png" class="work__image" alt="Project 1" />
+               
+                </div>
+              </div>
+            </div>       
+             
+            <div class="work__box">
+              <div class="work__text">
+                <h3>ET</h3>
+                <p>
+                  ET stands for Everyone Tips.  Allowing for the bill to be share and equal portions covered between the meal guests. It takes the bill and whatever percentage of tip yo want to give adding them together and dividing the number of people.
+                </p>
+                <ul class="work__list">
+                  <li>Java</li>
+                  <li>XML</li>
+                </ul>
+  
+                <div class="work__links">
+               
+                  <a href="https://github.com/ThomasRossouw/ET" title="View Source Code" target="_blank">
+                    <img src="./images/github.svg" class="work__code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/ET.png" class="work__image" alt="Project 1" />
+              </div>
+            </div>
       
       </div>
 
@@ -316,10 +409,15 @@
    
     </div>
   </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  <div id="preloader"></div>
+  <a href="#top" class="back-to-top" title="Back to Top" style="visibility: visible; opacity: 1; transform: scale(1);">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image">
   </a>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="glightbox/js/glightbox.min.js"></script>
+
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="./index.js"></script>
 </body>
 

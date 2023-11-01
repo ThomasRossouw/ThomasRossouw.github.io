@@ -1,3 +1,41 @@
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+
+
+/*
+ *  STYLE 4
+ */
+
+#style-4::-webkit-scrollbar-track
+{
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 10px;
+
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(45deg, #092279f9 29%, #00ff7cf4 100%);
+}
+
+
+
 /* --------------------------------------- */
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
@@ -34,8 +72,8 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #000;
-    --pink: #1a1af0;
+    --black: #000000;
+    --pink:  linear-gradient(45deg, #092279f9 29%, #00ff7cf4 100%);
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -51,7 +89,8 @@
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
 
-    --border-light: 1px solid rgb(36, 35, 35);
+    --border-light: 1px solid transparent;
+ 
 }
 
 html {
@@ -108,6 +147,9 @@ body {
 section {
     padding: var(--gutter-huge) 0;
     border-bottom: var(--border-light);
+    border-image:   linear-gradient(45deg, #092279f9 29%, #00ff7cf4 100%);
+    border-image-slice: 1;
+  
 }
 
 img {
@@ -125,7 +167,16 @@ h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color: var(--white);
+    color: var(--white); 
+    
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
 }
 
 .heading-primary {
@@ -188,7 +239,7 @@ p {
 /* --------------------------------------- */
 
 a {
-    color: var(--white);
+    color: #ffffff;
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     transition: all .2s;
@@ -202,6 +253,7 @@ a {
 button:focus,
 a:focus {
     outline: 2px solid var(--pink);
+  
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -210,7 +262,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    background: var(--pink);
 }
 
 .btn {
@@ -219,8 +271,11 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  transparent;
+    border-image:  linear-gradient( #092279f9 , #00ff7cf4 );
+    border-image-slice: 1;
     font-weight: 400;
+   font-size: large;
 }
 
 .btn:focus {
@@ -238,21 +293,28 @@ body:not(.user-is-tabbing) a:focus {
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+
+
 }
 
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
     background: var(--pink);
+
+
 }
 
 .btn--pink {
     background: var(--pink);
     transition: all 0.2s;
+    color: #ffffff;
+
 }
 
 .btn--pink::after {
     display: none;
+  
 }
 
 .btn--pink:hover,
@@ -266,7 +328,10 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid transparent;
+    border-image:  linear-gradient(45deg, #092279f9 , #00ff7cf4 );
+    border-image-slice: 1;
+   
 }
 
 .link__text::after {
@@ -276,26 +341,32 @@ body:not(.user-is-tabbing) a:focus {
     top: 0;
     left: 0;
     right: 100%;
-    background: var(--white);
+    color: #fff;
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+ 
+
 }
 
 .link__text:focus {
     outline: none;
+    color: var(--black);
 }
 
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--pink);
+   background:  linear-gradient(45deg, #092279f9 29%, #00ff7cf4 100%);
+   color: var(--black);
+
 }
 
 .link__text span {
     padding-left: 1rem;
     font-family: sans-serif;
 }
+
 
 /* ----- Back to Top ----- */
 
@@ -308,28 +379,31 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
-    border-radius: 50%;
+    background: linear-gradient(45deg, #092279f9 29%, #00ff7cf4 100%);    border-radius: 50%;
     z-index: 10;
     visibility: hidden;
-    transition: all .4s;
-}
+    transition: all 0.4s;
+  }
+  
+  .back-to-top:hover {
+    background: linear-gradient(45deg, #00ff7cf4 29%,  #092279f9 100%);  color: #fff;
+  }
 
-.back-to-top__image {
+  .back-to-top__image {
     height: 70%;
-}
-
-@media(max-width: 900px) {
+  }
+  
+  @media (max-width: 900px) {
     .back-to-top {
-        right: 2rem;
+      right: 2rem;
     }
-}
-
-@media(max-width: 500px) {
+  }
+  
+  @media (max-width: 500px) {
     .back-to-top {
-        right: 1rem;
+      right: 1rem;
     }
-}
+  }
 
 /* --------------------------------------- */
 /* ----- Navigation ----- */
@@ -399,22 +473,26 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--pink);
 }
 
+
+
 /* --------------------------------------- */
 /* ----- Header ----- */
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+    background: rgba(255, 255, 255, 0.8);
+    background-image:  url('./images/Back.avif');
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
+   
 }
 
 .header__text {
     position: absolute;
+
     top: 50%;
     transform: translateY(-50%);
 }
@@ -436,9 +514,15 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* --------------------------------------- */
+/*   --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
+
+.social-links a:hover {
+    background: -webkit-linear-gradient( #092279f9, #00ff7cf4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      }
 
 .work__box {
     display: flex;
@@ -472,7 +556,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__list {
-    /* list-style-type: square; */
+
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
 }
@@ -486,6 +570,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__code:hover {
     transform: scale(1.2);
+    color: var(--pink);
 }
 
 .work__image-box {
@@ -513,6 +598,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+
 }
 
 @media(max-width: 900px) {
@@ -552,6 +638,7 @@ body:not(.user-is-tabbing) a:focus {
 .footer {
     text-align: center;
     padding: var(--gutter-medium) 0 var(--gutter-normal);
+ 
 }
 
 .footer__social-links {
